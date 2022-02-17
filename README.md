@@ -41,5 +41,5 @@ PLAY_COMMAND=!superidol
 ```
 ![Screenshot](https://user-images.githubusercontent.com/68400102/154546484-ba495a30-9f20-4873-baf2-4541c9ab4987.png)
 
-
+## Make sure
 **This repo is created for fun purposes. No contributors, major or minor, are to fault for any actions done by this discord bot.**
