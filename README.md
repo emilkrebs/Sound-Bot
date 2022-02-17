@@ -2,8 +2,8 @@
 Play a sound in a discord channel indefinitely.
 
 # Getting started
-
-First create a `config.json` file which looks like this
+- Clone the repository using `git clone https://github.com/emilkrebs/sound-bot.git`
+- create a `config.json` file which looks like this
 ```json
 {
 	"clientId": "123456789012345678",
@@ -18,6 +18,5 @@ First create a `config.json` file which looks like this
 }
 
 ```
-- Clone the repository using `git clone https://github.com/emilkrebs/sound-bot.git`
 - `npm i` to install all required dependencies
 - `npm run start` to start the bot
