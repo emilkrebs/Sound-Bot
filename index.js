@@ -58,6 +58,40 @@ client.on('interactionCreate', async interaction => {
 
 });
 
+client.on('messageCreate', async message => {
+	if (!interaction.isCommand() && !interaction.guildId) return;
+	const { commandName } = message;
+	
+	if (commandName === playCommand) {
+		const channel = interaction.member.voice.channel;
+		if(!channel) return await interaction.reply({ content: "You are not in a voice channel.", ephemeral: true });
+		const connection = joinVoiceChannel({
+			channelId: channel.id,
+			guildId: channel.guild.id,
+			adapterCreator: interaction.guild.voiceAdapterCreator,
+		});
+
+		connection.subscribe(player);
+		playSound();
+		player.on('idle', () =>{
+			playSound();
+		})
+		player.unpause();
+		console.log(getTime() + colors.green('Bot is playes sound.'));
+		return await interaction.reply({ content: playAnswer, ephemeral: false });
+	}
+	else if (commandName === pauseCommand) {
+		player.pause();
+		console.log(getTime() + colors.green('Bot is paused sound.'));
+		return await interaction.reply({ content: pauseAnswer, ephemeral: false });
+	}
+	else if (commandName === resumeCommand) {
+		player.pause();
+		console.log(getTime() + colors.green('Bot is unpaused sound.'));
+		return await interaction.reply({ content: resumeAnswer, ephemeral: false });
+	}
+});
+
 function getTime() {
     let dateTime = new Date()
     return colors.gray(`[${dateTime.getHours()}:${dateTime.getMinutes()}:${dateTime.getSeconds()}] `);

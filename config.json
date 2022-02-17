@@ -2,9 +2,9 @@
 	"clientId": "943570593666719856",
 	"guildId": "943620711103225856",
 	"token": "OTQzNTcwNTkzNjY2NzE5ODU2.Yg0-mA.2BHBXdNU4R5BSPsaDwuA1P_sx3s",
-	"pauseCommand": "pause",
-	"resumeCommand": "resume",
-	"playCommand": "superidol",
+	"pauseCommand": "!pause",
+	"resumeCommand": "!resume",
+	"playCommand": "!superidol",
 	"playAnswer":"SuperIdol will now song for you.",
 	"pauseAnswer":"SuperIdol will now pause singing.",
 	"resumeAnswer":"SuperIdol will now resume singing."
