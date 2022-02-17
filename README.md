@@ -1,3 +1,17 @@
+<p align="center">
+  <a href="https://github.com/emilkrebs/sound-bot" target="_blank" rel="noopener noreferrer">
+    <img width="256" src="https://user-images.githubusercontent.com/68400102/154549560-82f1e891-4420-4998-b64e-18592c0176ad.png" alt="PlayerPrefs logo">
+  </a>
+</p>
+<div id="badges" align="center">
+  
+   ![Price](https://img.shields.io/badge/price-FREE-34D058)
+   [![Build](https://github.com/emilkrebs/sound-bot/actions/workflows/build.yml/badge.svg)](https://github.com/emilkrebs/sound-bot/actions/workflows/build.yml)
+</div>
+
+<hr>
+
+
 # Discord Sound Bot
 Play a sound in a discord channel indefinitely.
 I created this to annoy me and my friends on our discord server.
