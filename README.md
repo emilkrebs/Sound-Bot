@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/emilkrebs/sound-bot" target="_blank" rel="noopener noreferrer">
-    <img width="256" src="https://user-images.githubusercontent.com/68400102/154549560-82f1e891-4420-4998-b64e-18592c0176ad.png" alt="PlayerPrefs logo">
+    <img width="256" src="https://user-images.githubusercontent.com/68400102/154576482-29f724ff-86e6-448f-a679-6bcba493d629.svg" alt="PlayerPrefs logo">
   </a>
 </p>
 <div id="badges" align="center">
@@ -10,7 +10,6 @@
 </div>
 
 <hr>
-
 
 # Discord Sound Bot
 Play a sound in a discord channel indefinitely.
