@@ -4,12 +4,17 @@ const colors = require('colors');
 require("dotenv").config();
 const { createAudioPlayer, joinVoiceChannel, createAudioResource, StreamType } = require('@discordjs/voice');
 
-const { token, playCommand, pauseCommand, resumeCommand, pauseAnswer, playAnswer, resumeAnswer } = require('./config.json');
+const { pauseAnswer, playAnswer, resumeAnswer } = require('./config.json');
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 const player = createAudioPlayer();
-let songUrl = process.env.SONG_URL;
+
+const songUrl = process.env.SONG_URL;
+
+const playComamnd = process.env.PLAY_COMMAND;
+const pauseCommand = process.env.PAUSE_COMAMND;
+const resumeCommand = process.env.RESUME_COMMAND;
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
