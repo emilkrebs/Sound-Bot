@@ -2,6 +2,7 @@
 	"clientId": "943570593666719856",
 	"guildId": "943620711103225856",
 	"token": "OTQzNTcwNTkzNjY2NzE5ODU2.Yg0-mA.2BHBXdNU4R5BSPsaDwuA1P_sx3s",
+	"songUrl": "https://www.myinstants.com/media/sounds/super-idol.mp3",
 	"pauseCommand": "!pause",
 	"resumeCommand": "!resume",
 	"playCommand": "!superidol",
