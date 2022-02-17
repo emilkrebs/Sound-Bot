@@ -1,14 +1,15 @@
 // Require the necessary discord.js classes
 const { Client, Intents } = require('discord.js');
 const colors = require('colors');
+require("dotenv").config();
 const { createAudioPlayer, joinVoiceChannel, createAudioResource, StreamType } = require('@discordjs/voice');
 
-const { token, playCommand, pauseCommand, resumeCommand, pauseAnswer, playAnswer, resumeAnswer, songUrl } = require('./config.json');
+const { token, playCommand, pauseCommand, resumeCommand, pauseAnswer, playAnswer, resumeAnswer } = require('./config.json');
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 const player = createAudioPlayer();
-
+let songUrl = process.env.SONG_URL;
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
@@ -29,12 +30,12 @@ client.on('messageCreate', async message => {
 	if (content === playCommand) {
 		const channel = message.member.voice.channel;
 		if(!channel) return await message.reply({ content: "You are not in a voice channel.", ephemeral: true });
+
 		const connection = joinVoiceChannel({
 			channelId: channel.id,
 			guildId: channel.guild.id,
 			adapterCreator: message.guild.voiceAdapterCreator,
 		});
-
 		connection.subscribe(player);
 		playSound();
 		player.on('idle', () =>{
@@ -50,7 +51,7 @@ client.on('messageCreate', async message => {
 		return await message.reply({ content: pauseAnswer, ephemeral: false });
 	}
 	else if (content === resumeCommand) {
-		player.pause();
+		player.unpause();
 		console.log(getTime() + colors.green('Bot is unpaused sound.'));
 		return await message.reply({ content: resumeAnswer, ephemeral: false });
 	}
@@ -61,4 +62,4 @@ function getTime() {
     return colors.gray(`[${dateTime.getHours()}:${dateTime.getMinutes()}:${dateTime.getSeconds()}] `);
 }
 // Login to Discord with your client's token
-client.login(token);
+client.login(process.env.TOKEN);
