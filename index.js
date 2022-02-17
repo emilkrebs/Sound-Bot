@@ -32,7 +32,7 @@ function playSound(){
 client.on('messageCreate', async message => {
 	if (!message.guildId) return;
 	const { content } = message;
-	if (content === playCommand) {
+	if (content === playComamnd) {
 		const channel = message.member.voice.channel;
 		if(!channel) return await message.reply({ content: "You are not in a voice channel.", ephemeral: true });
 
@@ -49,16 +49,6 @@ client.on('messageCreate', async message => {
 		player.unpause();
 		console.log(getTime() + colors.green('Bot is playes sound.'));
 		return await message.reply({ content: playAnswer, ephemeral: false });
-	}
-	else if (content === pauseCommand) {
-		player.pause();
-		console.log(getTime() + colors.green('Bot is paused sound.'));
-		return await message.reply({ content: pauseAnswer, ephemeral: false });
-	}
-	else if (content === resumeCommand) {
-		player.unpause();
-		console.log(getTime() + colors.green('Bot is unpaused sound.'));
-		return await message.reply({ content: resumeAnswer, ephemeral: false });
 	}
 });
 
