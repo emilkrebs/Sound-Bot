@@ -7,11 +7,16 @@
   
    ![Price](https://img.shields.io/badge/price-FREE-34D058)
    [![Build](https://github.com/emilkrebs/sound-bot/actions/workflows/build.yml/badge.svg)](https://github.com/emilkrebs/sound-bot/actions/workflows/build.yml)
+
+
 </div>
 
 <hr>
 
 # Discord Sound Bot
+
+<a href="https://www.buymeacoffee.com/emilkrebs" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 Play a sound in a discord channel indefinitely.
 I created this to annoy me and my friends on our discord server.
 
