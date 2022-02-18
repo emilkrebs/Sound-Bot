@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/emilkrebs/sound-bot" target="_blank" rel="noopener noreferrer">
-    <img width="256" src="https://user-images.githubusercontent.com/68400102/154576482-29f724ff-86e6-448f-a679-6bcba493d629.svg" alt="PlayerPrefs logo">
+    <img width="256" src="https://user-images.githubusercontent.com/68400102/154764102-e3154ef0-e6ee-4a53-80aa-81013b6503a0.svg" alt="PlayerPrefs logo">
   </a>
 </p>
 <div id="badges" align="center">
@@ -10,6 +10,7 @@
 
 
 </div>
+
 
 <hr>
 
@@ -45,5 +46,5 @@ PLAY_COMMAND=!superidol
 ```
 ![Screenshot](https://user-images.githubusercontent.com/68400102/154546484-ba495a30-9f20-4873-baf2-4541c9ab4987.png)
 
-## Make sure
+## Please note
 **This repo is created for fun purposes. No contributors, major or minor, are to fault for any actions done by this discord bot.**
