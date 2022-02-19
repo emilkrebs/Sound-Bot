@@ -1,20 +1,30 @@
 {
   "name": "sound-bot",
+  "displayName": "sound-bot",
+  "icon": "https://raw.githubusercontent.com/emilkrebs/Sound-bot/main/logo.svg",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Discord-Bot that plays a sound or music in a discord voice-channel indefinitely. ",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emilkrebs/Sound-bot"
+  },
+  "author": "Emil Krebs",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilkrebs/Sound-bot/issues"
+  },
+  "homepage": "https://github.com/emilkrebs/Sound-bot",
   "dependencies": {
     "@discordjs/builders": "^0.12.0",
     "@discordjs/rest": "^0.3.0",
     "@discordjs/voice": "^0.8.0",
     "axios": "^0.26.0",
     "colors": "^1.4.0",
-    "discord-api-types": "^0.27.1",
+    "discord-api-types": "^0.27.2",
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
     "ffmpeg-static": "^4.4.1",
