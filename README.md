@@ -1,13 +1,13 @@
-<p align="center">
+<p id="logo" align="center">
   <a href="https://github.com/emilkrebs/sound-bot" target="_blank" rel="noopener noreferrer">
-    <img width="256" src="https://raw.githubusercontent.com/emilkrebs/Sound-bot/main/logo.svg" alt="PlayerPrefs logo">
+    <img width="256" alt="Sound-Bot Logo" src="https://raw.githubusercontent.com/emilkrebs/Sound-bot/main/logo.svg">
   </a>
 </p>
+
 <div id="badges" align="center">
   
-   ![Price](https://img.shields.io/badge/price-FREE-34D058)
    [![Build](https://github.com/emilkrebs/sound-bot/actions/workflows/build.yml/badge.svg)](https://github.com/emilkrebs/sound-bot/actions/workflows/build.yml)
-
+   [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/emilkrebs/Sound-bot)
 
 </div>
 
