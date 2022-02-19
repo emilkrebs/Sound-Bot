@@ -1,8 +1,11 @@
-<p id="logo" align="center">
+<div id="logo" align="center">
   <a href="https://github.com/emilkrebs/sound-bot" target="_blank" rel="noopener noreferrer">
-    <img width="256" alt="Sound-Bot Logo" src="https://raw.githubusercontent.com/emilkrebs/Sound-bot/main/logo.svg">
-  </a>
-</p>
+	  <img width="256" alt="Sound-Bot Logo" src="https://raw.githubusercontent.com/emilkrebs/Sound-bot/main/logo.svg">
+	</a>
+  <h3>
+    Create annoying discord bots
+  </h3>
+</div>
 
 <div id="badges" align="center">
   
