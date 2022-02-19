@@ -42,7 +42,7 @@ Running Demo Bot:
 Configuration in the `.env` file:
 ```ruby
 TOKEN=your-bot-token
-SONG_URL=https://cdn.discordapp.com/attachments/875307726165671946/943935756559319070/egghead.mp3
+SONG_URL=https://github.com/emilkrebs/Sound-bot/raw/main/assets/super-idol.mp3
 PLAY_COMMAND=!superidol
 ```
 ![Screenshot](https://user-images.githubusercontent.com/68400102/154546484-ba495a30-9f20-4873-baf2-4541c9ab4987.png)
