@@ -18,6 +18,9 @@
     "url": "https://github.com/emilkrebs/Sound-bot/issues"
   },
   "homepage": "https://github.com/emilkrebs/Sound-bot",
+  "logo": {
+    "url": "https://raw.githubusercontent.com/emilkrebs/Sound-bot/main/logo.svg"
+  },
   "dependencies": {
     "@discordjs/builders": "^0.12.0",
     "@discordjs/rest": "^0.3.0",
