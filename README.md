@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/emilkrebs/sound-bot" target="_blank" rel="noopener noreferrer">
-    <img width="256" src="https://user-images.githubusercontent.com/68400102/154764102-e3154ef0-e6ee-4a53-80aa-81013b6503a0.svg" alt="PlayerPrefs logo">
+    <img width="256" src="https://raw.githubusercontent.com/emilkrebs/Sound-bot/main/logo.svg" alt="PlayerPrefs logo">
   </a>
 </p>
 <div id="badges" align="center">
