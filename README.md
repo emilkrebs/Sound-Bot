@@ -36,7 +36,7 @@ PLAY_COMMAND=your-play-command
 - `npm run start` or `node index.js` to start the bot
 
 # Example
-Running Demo Bot: 
+Demo Bot (Offline): 
 [Invite](https://discord.com/oauth2/authorize?client_id=943570593666719856&permissions=3148288&scope=bot)
 
 Configuration in the `.env` file:
