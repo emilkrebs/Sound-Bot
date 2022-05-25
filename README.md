@@ -47,5 +47,11 @@ PLAY_COMMAND=!superidol
 ```
 ![Screenshot](https://user-images.githubusercontent.com/68400102/154546484-ba495a30-9f20-4873-baf2-4541c9ab4987.png)
 
+## Known Issues
+
+None
+
+[Add Issue](https://github.com/emilkrebs/sound-bot/issues/new)
+
 ## Please note
 **This repo is created for fun purposes. No contributors, major or minor, are to fault for any actions done by this repo**
