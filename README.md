@@ -25,6 +25,7 @@ I created this to annoy me and my friends on our discord server.
 **You WILL get annoyed very fast.**
 
 # Getting started
+- Install [node.js](https://nodejs.org/en/)
 - Clone the repository using `git clone https://github.com/emilkrebs/sound-bot.git`
 - create a `.env` file that looks like this:
 ```ruby
