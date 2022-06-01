@@ -27,7 +27,7 @@ I created this to annoy me and my friends on our discord server.
 # Getting started
 - Install [node.js](https://nodejs.org/en/)
 - Clone the repository using `git clone https://github.com/emilkrebs/sound-bot.git`
-- create a `.env` file that looks like this:
+- Create a `.env` file that looks like this:
 ```ruby
 TOKEN=your-bot-token
 SONG_URL=your-song-url
