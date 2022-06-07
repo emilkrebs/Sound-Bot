@@ -13,6 +13,8 @@ const player = createAudioPlayer();
 const songUrl = process.env.SONG_URL;
 
 const playComamnd = process.env.PLAY_COMMAND;
+
+// I removed pause and resume to make this bot more annoying
 const pauseCommand = process.env.PAUSE_COMAMND;
 const resumeCommand = process.env.RESUME_COMMAND;
 
