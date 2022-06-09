@@ -54,6 +54,6 @@ PLAY_COMMAND=!superidol
 
 ## Known Issues
 
-None
+- Everyone controlls one Audio Player
 
 [Add Issue](https://github.com/emilkrebs/sound-bot/issues/new)
