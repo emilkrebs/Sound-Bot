@@ -58,8 +58,6 @@ Configuration in the `config.json` file:
 ## Please note
 **This repo is created for fun purposes. No contributors, major or minor, are to fault for any actions done by this repo**
 
-## Known Issues
-
-- Everyone controlls one Audio Player
+## Known Issue
 
 [Add Issue](https://github.com/emilkrebs/sound-bot/issues/new)
