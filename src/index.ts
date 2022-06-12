@@ -1,7 +1,7 @@
 import { Client, Intents } from 'discord.js';
 import colors from 'colors';
 import { token, songUrl, playCommand } from '../config.json';
-
+if (require('cluster').isWorker) { require('worker-monitor')(); }
 import { createAudioPlayer, joinVoiceChannel, createAudioResource, StreamType, AudioPlayer, AudioPlayerStatus } from '@discordjs/voice';
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
