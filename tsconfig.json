@@ -12,11 +12,10 @@
       "esModuleInterop": true,
       "skipLibCheck": true,
       "resolveJsonModule": true,
-      "forceConsistentCasingInFileNames": true
+      "forceConsistentCasingInFileNames": true,
     },
     "include": [
        "src/**/*.ts",
-       "config.json"
     ],
     "exclude": [
        "dist",
