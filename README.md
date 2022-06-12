@@ -28,24 +28,30 @@ I created this to annoy me and my friends on our discord server.
 - Install [node.js](https://nodejs.org/en/)
 - If you don't already have a Discord Bot, create one [here](https://discord.com/developers/applications/)
 - Clone the repository using `git clone https://github.com/emilkrebs/sound-bot.git`
-- Create a `.env` file that looks like this:
-```ruby
-TOKEN=your-bot-token
-SONG_URL=your-song-url
-PLAY_COMMAND=your-play-command
+- Create a `config.json` file that looks like this:
+```json
+{
+	"token":"your-bot-token",
+	"songUrl":"your-song-url",
+	"playCommand":"your-play-command"
+}
+
 ```
 - `npm i` to install all required dependencies
-- `npm run start` or `node index.js` to start the bot
+- `npm run start` to start the bot
 
 # Example
 Demo Bot (Offline): 
 [Invite](https://discord.com/oauth2/authorize?client_id=943570593666719856&permissions=3148288&scope=bot)
 
-Configuration in the `.env` file:
-```ruby
-TOKEN=your-bot-token
-SONG_URL=https://github.com/emilkrebs/Sound-bot/raw/main/assets/super-idol.mp3
-PLAY_COMMAND=!superidol
+Configuration in the `config.json` file:
+```json
+{
+	"token":"your-bot-token",
+	"songUrl":"https://github.com/emilkrebs/Sound-bot/raw/main/assets/super-idol.mp3",
+	"playCommand":"!superidol"
+}
+
 ```
 ![Screenshot](https://user-images.githubusercontent.com/68400102/154546484-ba495a30-9f20-4873-baf2-4541c9ab4987.png)
 
