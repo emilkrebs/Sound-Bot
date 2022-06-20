@@ -58,4 +58,6 @@ Configuration in the `config.json` file:
 
 ## Known Issue
 
+None
+
 [Add Issue](https://github.com/emilkrebs/sound-bot/issues/new)
