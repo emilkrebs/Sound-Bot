@@ -56,7 +56,7 @@ Configuration in the `config.json` file:
 ## Please note
 **This repo is created for fun purposes. No contributors, major or minor, are to fault for any actions done by this repo**
 
-## Known Issue
+## Known Issues
 
 None
 
