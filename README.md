@@ -23,7 +23,7 @@ I created this to annoy me and my friends on our discord server.
 **You WILL get annoyed very fast.**
 
 # Getting started
-- Install [node.js](https://nodejs.org/en/)
+- Install [node.js](https://nodejs.org/en/) (v22.12 or newer)
 - If you don't already have a Discord Bot, create one [here](https://discord.com/developers/applications/)
 - Clone the repository using `git clone https://github.com/emilkrebs/sound-bot.git`
 - Create a `config.json` file that looks like this:
@@ -36,7 +36,8 @@ I created this to annoy me and my friends on our discord server.
 
 ```
 - `npm i` to install all required dependencies
-- `npm run start` to start the bot
+- In the [Discord Developer Portal](https://discord.com/developers/applications/), open your bot and enable **Message Content Intent** (Bot → Privileged Gateway Intents) — without it the bot can't read commands
+- `npm run start` to start the bot, then join a voice channel and type your `playCommand` — the bot joins the channel of whoever types it
 
 # Example
 Demo Bot (Offline): 
