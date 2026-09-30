@@ -1,10 +1,17 @@
-import { Client, Intents } from 'discord.js';
+import { Client, GatewayIntentBits } from 'discord.js';
 import colors from 'colors';
 import { token, songUrl, playCommand } from '../config.json';
+import ffmpegPath from 'ffmpeg-static';
 
 import { createAudioPlayer, joinVoiceChannel, createAudioResource, StreamType, AudioPlayer, AudioPlayerStatus } from '@discordjs/voice';
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+// Use the FFmpeg binary bundled with the package above so no system-wide
+// FFmpeg install is required.
+if (ffmpegPath) {
+    process.env.FFMPEG_PATH = ffmpegPath;
+}
+
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
 client.on('messageCreate', async message => {
     if (!message.guildId) return;
@@ -38,9 +45,9 @@ function playSound(player: AudioPlayer){
 	player.play(resource);
 }
 
-client.once('ready', () => {
+client.once('clientReady', () => {
     console.log(getTime() + colors.green('Bot is Ready.'));
-    console.log(getTime() + colors.green(`Bot is logged in as ${colors.yellow(client.user!.tag)}.`));
+    console.log(getTime() + colors.green(`Bot is logged in as ${colors.yellow(client.user!.username)}.`));
 });
 
 function getTime() {
